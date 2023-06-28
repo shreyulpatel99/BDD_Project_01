@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="30.343">
+    <testcase classname="EBay home page tests" name="User is verifying the home page" time="15.141">
+        <system-out><![CDATA[Given user is already on Login Page.........................................passed
+When title of Login Page is Electronics, Cars, Fashion, Collectibles & More | eBay.passed
+Then user clicks on sign in button for home page............................passed
+Then user enters username for home page "shreyulpatel30@gmail.com"..........passed
+And user clicks on continue button for home page............................passed
+Then user enters password for home page "Scofield@7"........................passed
+And click on sign in button for home page...................................passed
+Then user clicks on the link "Saved"........................................passed
+Then user quits the browser.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="EBay home page tests" name="User is verifying the home page 2" time="14.941">
+        <system-out><![CDATA[Given user is already on Login Page.........................................passed
+When title of Login Page is Electronics, Cars, Fashion, Collectibles & More | eBay.passed
+Then user clicks on sign in button for home page............................passed
+Then user enters username for home page "shreyulpatel30@gmail.com"..........passed
+And user clicks on continue button for home page............................passed
+Then user enters password for home page "Scofield@7"........................passed
+And click on sign in button for home page...................................passed
+Then user clicks on the link "Fashion"......................................passed
+Then user quits the browser.................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
