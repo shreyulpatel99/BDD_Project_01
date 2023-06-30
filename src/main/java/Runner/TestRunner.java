@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( 
-		features ="D:/QA/CucumberWorkspace/BDD_Project_01/src/main/java/Features/homePage.feature", //location of feature file
+		features ="D:/QA/CucumberWorkspace/BDD_Project_01/src/main/java/Features/addToCart.feature", //location of feature file
 		glue= {"StepDefinition"}, //step definition Package Name
 		plugin = {"pretty","html:target/cucumber-reports"}, //test report 
 		monochrome = true, //display the console output in a readable format
