@@ -15,6 +15,6 @@ Then user quits the browser
 Examples: 
 
 	|	username 				|	password 	| 			linkname 	|
-	| shreyulpatel30@gmail.com 	| Scofield@7 	| Saved 	|
+	| shreyulpatel30@gmail.com 	| Scofield@7 	| Saved 				|
 	| shreyulpatel30@gmail.com 	| Scofield@7 	| Fashion 				|
 

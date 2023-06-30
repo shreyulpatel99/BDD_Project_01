@@ -1,6 +1,7 @@
 package StepDefinition;
 
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -58,12 +59,16 @@ public class AddToCartStepDefinition {
 	
 	@Then("user fills the delivery information")
 	public void user_fills_the_delivery_information(DataTable deliveryinfo) {
-		List<String> delivery = deliveryinfo.row(0); 
-		driver.findElement(By.name("address1")).sendKeys(delivery.get(0)); 
-		driver.findElement(By.name("city")).sendKeys(delivery.get(1));
-		driver.findElement(By.name("zip")).sendKeys(delivery.get(2));
-		driver.findElement(By.name("phoneFlagComp1")).sendKeys(delivery.get(3));
+		//as map in for loop so we can use the data in loop
+		//this is not create different test cases, so it will use all the values in a single test case 
+		//when you specify the examples in feature file that will use different scenarios and will give you different test cases 
+		for(Map<String,String> delivery : deliveryinfo.asMaps(String.class,String.class)) {
+		driver.findElement(By.name("address1")).sendKeys(delivery.get("address")); 
+		driver.findElement(By.name("city")).sendKeys(delivery.get("city"));
+		driver.findElement(By.name("zip")).sendKeys(delivery.get("zipcode"));
+		driver.findElement(By.name("phoneFlagComp1")).sendKeys(delivery.get("contactno"));
 		
+		}
 	}
 	
 	@Then("user closes the browser")
